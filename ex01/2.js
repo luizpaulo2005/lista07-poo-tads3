@@ -14,7 +14,7 @@ class Membro {
   }
 
   #calculaIMC() {
-    console.log(`O IMC de ${this.#nome} é ${(this.#peso / this.#altura ** 2).toFixed(2)}`);
+    return `O IMC de ${this.#nome} é ${(this.#peso / this.#altura ** 2).toFixed(2)}`
   }
 
   get retornaIMC() {
@@ -26,7 +26,7 @@ class Membro {
       this.#mensalidade = this.#mensalidade * 0.9;
     }
 
-    console.log(`A mensalidade de ${this.#nome} é R$${this.#mensalidade}`);
+    return `A mensalidade de ${this.#nome} é R$${this.#mensalidade}`
   }
 
   get retornaMensalidade() {
